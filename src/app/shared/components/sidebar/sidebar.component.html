@@ -1,0 +1,25 @@
+<mat-drawer-container class="example-container mat-typography" autosize>
+    <mat-drawer #drawer mode="side" disableClose="true" opened="true">
+        <button mat-icon-button (click)="isExpanded = !isExpanded">
+            <mat-icon aria-label="Menu">subject</mat-icon>
+        </button>
+        <mat-nav-list>
+            <mat-list-item>
+                <mat-icon mat-list-icon>home</mat-icon>
+                <h4 mat-line *ngIf="isExpanded">Home</h4>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>card_travel</mat-icon>
+                <h4 mat-line *ngIf="isExpanded">Task</h4>
+            </mat-list-item>
+            <mat-list-item>
+                <mat-icon mat-list-icon>assessment</mat-icon>
+                <h4 mat-line *ngIf="isExpanded">Charts</h4>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-drawer>
+        <div class="example-sidenav-content">
+            <app-header style="z-index:10;"></app-header>
+            <router-outlet></router-outlet>
+        </div>
+</mat-drawer-container>
