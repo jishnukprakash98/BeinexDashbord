@@ -12,7 +12,7 @@ import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { MatSidenavModule} from '@angular/material';
 import { HighchartsChartModule } from 'highcharts-angular';
-import { DoughnutChartComponent, PieChartComponent, BarChartComponent } from 'angular-d3-charts';
+import { PieChartComponent, BarChartComponent } from 'angular-d3-charts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
@@ -22,7 +22,6 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     AreaComponent,
     CardComponent,
     PieComponent,
-    DoughnutChartComponent, 
     PieChartComponent, 
     BarChartComponent
   ],
