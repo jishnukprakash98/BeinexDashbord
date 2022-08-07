@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 
 export class SidebarComponent implements OnInit {
+  isExpanded : any;
   constructor() { }
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
   ngOnInit() {

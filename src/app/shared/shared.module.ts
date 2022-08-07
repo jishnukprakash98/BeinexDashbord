@@ -12,7 +12,6 @@ import { CardComponent } from './widgets/card/card.component';
 import { PieComponent } from './widgets/pie/pie.component';
 import { MatSidenavModule} from '@angular/material';
 import { HighchartsChartModule } from 'highcharts-angular';
-import { PieChartComponent, BarChartComponent } from 'angular-d3-charts';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
@@ -21,9 +20,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     SidebarComponent,
     AreaComponent,
     CardComponent,
-    PieComponent,
-    PieChartComponent, 
-    BarChartComponent
+    PieComponent
   ],
   imports: [
     CommonModule,
